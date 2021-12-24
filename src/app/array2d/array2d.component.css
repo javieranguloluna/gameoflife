@@ -1,0 +1,32 @@
+.cell {
+    height: 3px;
+    width: 3px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 1px solid blue;
+}
+
+.col {
+    height: 3px;
+    background-color: cadetblue;
+    border: 1px solid blue;
+    display: inline-table;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.alive {
+    background-color: green;
+}
+
+.dead {
+    background-color: blue;
+}
+
+.btn {
+    float: right;
+}
+
+.info {
+    float: right;
+}

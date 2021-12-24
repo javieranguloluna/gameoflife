@@ -1,0 +1,25 @@
+
+<ng-container *ngFor="let col of grid">
+    <div class="col">
+      <ng-container *ngFor="let cell of col">
+        <ng-container *ngIf="cell; else elseTemplate">
+          <div class="cell alive"></div>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <div class="cell dead"></div>
+        </ng-template>
+      </ng-container>
+    </div>
+  </ng-container>
+  
+  <span class="info">
+    <p>Nº de ciclos: {{ciclos}}</p>
+    <p>Nacimientos: {{events.nacimientos}}</p>
+    <p>Muertes: {{events.muertes}}</p>
+    <p>Siguen vivas: {{events.aunVivas}}</p>
+    <p>Siguen muertas: {{events.aunMuertas}}</p>
+  </span>
+  
+  <button class="btn" (click)="playStop()">{{action}}</button>
+  <button class="btn" (click)="resetAll()">Reset</button>
+  

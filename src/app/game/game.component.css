@@ -1,0 +1,35 @@
+.cell {
+    height: 20px;
+    width: 20px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border-radius: 50%;
+}
+
+.col {
+    height: 20px;
+    display: inline-table;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: cadetblue;
+}
+
+.alive {
+    background-color: black;
+}
+
+.btn {
+    float: right;
+}
+
+.info {
+    float: right;
+}
+
+.alive-character {
+    background-color: green;
+}
+
+.dead-character {
+    background-color: red;
+}

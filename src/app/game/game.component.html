@@ -1,0 +1,18 @@
+
+<div class="col" *ngFor="let col of dimArray; let x=index">
+    <div *ngFor="let cell of dimArray; let y=index" class="cell" [id]="x+ '-' +y" (click)="toogleCell(x+ '-' +y)"></div>
+</div>
+
+
+<span class="info">
+    <p>Nº de ciclos: {{ciclos}}</p>
+    <p>Tiempo de ciclo (s): {{elapsed}}</p>
+    <p>Nacimientos: {{events.nacimientos}}</p>
+    <p>Muertes: {{events.muertes}}</p>
+    <p>Siguen vivas: {{events.aunVivas}}</p>
+    <p>Siguen muertas: {{events.aunMuertas}}</p>
+</span>
+
+<button class="btn" (click)="playStop()">{{action}}</button>
+<button class="btn" (click)="resetAll()">Reset</button>
+  
